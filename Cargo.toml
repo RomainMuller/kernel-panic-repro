@@ -1,0 +1,13 @@
+[package]
+name = "kernel-panic-repro"
+edition = "2024"
+
+[dependencies]
+flate2 = "*"
+tempfile = "*"
+
+[features]
+default = ["dlsym", "dlclose"]
+dlsym = []
+dlclose = []
+verbose = []
